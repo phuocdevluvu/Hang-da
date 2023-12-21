@@ -101,7 +101,8 @@ html {
     border-radius: 0 20% 0 0;
 }
 
-#nav,.subnav {
+#nav,
+.subnav {
     list-style: none;
 }
 
@@ -117,6 +118,7 @@ html {
 }
 
 #nav li a {
+    font-size: 14px;
     text-decoration: none;
     padding: 0 16px;
     line-height: 46px;
@@ -125,7 +127,7 @@ html {
 
 #nav>li:first-child a {
     font-size: 12px;
-    background-color: #23eb3ea9;
+    background-color: #059100;
 }
 
 #nav>li:first-child:hover a {
@@ -149,21 +151,20 @@ html {
 }
 
 .subnav li:hover a {
-    background-color: rgb(33, 202, 33);
+    background-color: rgb(22, 189, 255);
 }
 
 #nav .subnav {
     display: none;
     position: absolute;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
 
-.subnav > li {
+.subnav>li {
     display: inline-block;
     width: 180px;
-    background-color: #fff;
+    background-color: skyblue;
 }
 
 #nav .subnav a {
@@ -181,7 +182,7 @@ html {
 
 #header .search-btn:hover {
     cursor: pointer;
-    background-color: rgb(33, 202, 33);
+    background-color: rgb(22, 189, 255);
 }
 
 #header .mobile-menu-btn {
@@ -189,7 +190,7 @@ html {
     right: 0;
     padding: 0 21px;
     display: none;
-    position: absolute; 
+    position: absolute;
 }
 
 #header .mobile-menu-btn:hover {
@@ -211,13 +212,13 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('../img/slider.webp') top center / cover no-repeat;
+    background: url('../img/Slider/mungchuagiangsinh-Ga-1-14.jpeg') top center / cover no-repeat;
     border-radius: 0 0 5% 5%;
 }
 
 #slider .text-content {
     position: absolute;
-    bottom: 48px;
+    bottom: 40px;
     color: #fff;
     text-align: center;
     width: 100%;
@@ -230,7 +231,8 @@ html {
 
 #slider .text-description {
     font-size: 18px;
-    margin-top: 25px;
+    margin-top: 16px;
+    margin-left: 20px;
     text-shadow: 0 0 4px #000;
 }
 
@@ -252,14 +254,14 @@ html {
 
 #content .section-sub-heading {
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 25px;
     font-style: italic;
     opacity: .6;
 }
 
 #content .about-text {
-    font-size: 15px;
+    font-size: 14.7px;
     margin-top: 25px;
     text-align: justify;
     line-height: 1.4;
@@ -278,6 +280,7 @@ html {
     width: 154px;
     border-radius: 5%;
 }
+
 /* tour section */
 
 .tour-section {
@@ -325,31 +328,39 @@ html {
 .place-img {
     width: 100%;
     display: block;
-    cursor: pointer;
-}
-
-.place-img:hover {
-    opacity: 0.6;
+    border-radius: 2% 2% 0 0;
 }
 
 .place-body {
+    min-height: 180px;
     background-color: #fff;
     padding: 16px;
     font-size: 15px;
+    border-radius: 0 0 7px 7px;
 }
 
 .place-heading {
-    font-size: 15px;
+    margin-top: 15px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .place-time {
-    margin: 15px 0;
+    margin: 20px 0;
     color: #757575;
 }
 
 .place-desc {
+    font-size: 15px;
     line-height: 1.4;
+}
+
+.bg-green {
+    background-color: rgb(33, 202, 33);
+}
+
+.bg-pink {
+    background-color: violet;
 }
 
 /* Modal by-tickets*/
@@ -371,32 +382,20 @@ html {
 }
 
 .modal-container {
-    background: #fff;
-    width: 900px;
+    background: rgb(33, 150, 33);
+    border-radius: 15px;
+    width: 600px;
     max-width: calc(100% - 32px);
     position: relative;
     animation: modalFadeIn ease .4s;
-}
-
-.modal-header {
-    height: 130px;
-    background: #009688;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    color: #fff;
-}
-
-.modal-header i {
-    margin-right: 16px;
 }
 
 .modal-close {
     position: absolute;
     right: 0;
     color: #fff;
-    padding: 12px;
+    padding: 24px;
+    background-color: #cf1818;
     cursor: pointer;
     opacity: .8;
 }
@@ -407,44 +406,25 @@ html {
 
 .modal-body {
     padding: 16px;
+    min-height: 320px;
+    text-align: center;
 }
 
-.modal-label {
-    display: block;
-    font-size: 15px;
-    margin-bottom: 12px;
-}
-
-.modal-input {
-    width: 100%;
-    font-size: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 24px;
-}
-
-#buy-tickets {
-    width: 100%;
-    background-color: #009988;
-    border: none;
+.modal-check {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 1000;
     color: #fff;
-    font-size: 15px;
-    padding: 12px;
-    text-transform: uppercase;
-    cursor: pointer;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 20px;
+    margin-top: 50px;
 }
 
-#buy-tickets:hover {
-    opacity: 0.9;
-}
-
-.modal-footer {
-    padding: 16px;
-    text-align: right;
-}
-
-.modal-footer a {
-    color: #2196f3;
+.modal-report {
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 500;
 }
 
 @keyframes modalFadeIn {
@@ -458,15 +438,38 @@ html {
     }
 }
 
-
 .map-section {
-    margin-top: 60px
+    width: 700px;
+    width: 90%;
+    margin: 60px auto;
+    color: #cf1818 !important;
+}
+
+#content .map-section .content-section {
+    padding-bottom: 48px;
+    /* background-color: skyblue; */
+    border-radius: 10px;
+    width: 100%;
+}
+
+#content .map-section .section-heading {
+    font-size: 21.6px;
+}
+
+#content .map-section .section-sub-heading {
+    font-size: 16.1px;
 }
 
 .map-section img {
-    border-radius: 1%;
+    border-radius: 2%;
     background-size: contain;
     width: 100%;
+    padding: 0px 0px;
+    margin: 30px 0;
+}
+
+.map-section img:last-child {
+    margin-bottom: 0;
 }
 
 /* Contact form */
@@ -494,6 +497,7 @@ html {
 }
 
 .pray {
+    font-size: 15.5px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -509,10 +513,19 @@ html {
     outline: none;
 }
 
+.contact-submit-btn {
+    background-color: skyblue;
+}
+
+.contact-submit-btn:hover {
+    background-color: rgb(22, 189, 255);
+    cursor: pointer;
+}
 
 /* footer */
 #footer {
     margin: 64px 16px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -521,13 +534,13 @@ html {
 }
 
 #footer .socials-list a {
-    color: rgba(0, 0, 0, 0.6);
+    color: #c24e4e;
     text-decoration: none;
 }
 
 #footer .copyright a:hover,
 #footer .socials-list a:hover {
-    color: rgba(0, 0, 0, 0.4);
+    color: #f00;
 }
 
 #footer .copyright {
@@ -537,4 +550,125 @@ html {
 
 #footer .copyright a {
     color: rgba(0, 0, 0, 0.6);
+    color: rgb(22, 189, 255);
 }
+
+.header-icon {
+    border-radius: 50%;
+}
+
+.snowflake {
+    color: #e2f4ff;
+    text-shadow: 1px 0 2px skyblue;
+    }
+    @-webkit-keyframes snowflakes-fall {
+    0% {
+    top: -10%;
+    }
+    100% {
+    top: 100%;
+    }
+    }
+    @-webkit-keyframes snowflakes-shake {
+    0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    }
+    50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+    }
+    100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    }
+    }
+    @keyframes snowflakes-fall {
+    0% {
+    top: -10%;
+    }
+    100% {
+    top: 100%;
+    }
+    }
+    @keyframes snowflakes-shake {
+    0% {
+    transform: translateX(0px);
+    }
+    50% {
+    transform: translateX(80px);
+    }
+    100% {
+    transform: translateX(0px);
+    }
+    }
+    .snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 5s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: 3, infinite;
+    animation-play-state: running, running;
+    }
+    .snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s;
+    }
+    .snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s;
+    }
+    .snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, 0.5s;
+    animation-delay: 6s, 0.5s;
+    }
+    .snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s;
+    }
+    .snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s;
+    }
+    .snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s;
+    }
+    .snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s;
+    }
+    .snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s;
+    }
+    .snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s;
+    }
+    .snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s;
+    }
